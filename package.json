@@ -1,0 +1,26 @@
+{
+  "name": "complex-images",
+  "version": "1.0.0",
+  "description": "Quick demo of solution for complex images description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damianklick/complex-images.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damianklick/complex-images/issues"
+  },
+  "homepage": "https://github.com/damianklick/complex-images#readme",
+  "klick-components": {
+    "copy-to-folder": true,
+    "target-folder": "src/components"
+  },
+  "dependencies": {
+    "@klickinc/klick-component-accordion-accessible": "^1.3.2"
+  }
+}

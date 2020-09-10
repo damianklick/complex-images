@@ -1,0 +1,77 @@
+/* https://github.com/KlickInc/klick-accessibility/tree/master/components/accordion */
+/* dist/accordion.css v1.3.2 Tue Sep 01 2020 17:04:54 GMT-0400 (Eastern Daylight Time) */
+/**
+ * Baseline functional CSS for accordions.
+ */
+
+/**
+ * If the accordion is closed, hide the content panel.
+ *
+ * Note that the aria attribute is only applied when javascript is enabled,
+ * which means the content panel will ALWAYS be visible if the user has
+ * disabled javascript (which is good).
+ */
+[data-panel][data-state="collapsed"] {
+  display: none;
+}
+
+/**
+ * Make the interactive button look like the heading.
+ *
+ * Not entirely necessary, but makes life easier instead of having to style
+ * both a heading (for non-js) and the button (for js).
+ */
+[data-trigger-accordion] {
+  all: inherit;
+  cursor: pointer;
+}
+
+/**
+ * Add a focus indicator to the trigger.
+ * You probably want to override this to match any styles in your project.
+ */
+[data-trigger-accordion]:focus {
+  outline: 2px solid blue;
+}
+
+h3 {
+  padding: 5px;
+  color: navy;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+[data-panel][data-state="expanded"] {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  width: 70%;
+  margin: 50px auto;
+}
+
+figure {
+  width: 80%;
+  margin: 10px auto;
+  background-color: lightgrey;
+}
+
+img {
+  width: 100%;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
